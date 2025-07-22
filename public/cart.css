@@ -1,0 +1,88 @@
+.amt{
+    display: flex;
+    align-items: center;
+    padding:0 5px;
+    background-color: white;
+    color: #00325e;
+   height: 45px;
+   font-size: 20px;
+   font-weight: bolder;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.pay{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding-top: 10px;
+    
+}
+.pay:hover{
+
+cursor:pointer;
+}
+.pay img{
+    filter: contrast(1.5);
+}
+.pay div{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #00325e;
+}
+.item{
+    width:80%;
+    height: 123px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.prod1{
+    display: flex;
+    width: 80%;
+}
+.name{
+    width:750px;;
+    height: 110px;
+    
+}
+.name:hover{
+    text-decoration: none;
+}
+.ord{
+    display: flex;
+    justify-content: space-around;
+    background-color: #00325e;
+    color: white;
+    position: relative;
+    padding: 2px;
+    border-radius: 5px;
+    align-items: center;
+}
+.ord button{
+    background-color: white;
+    color: #00325e;
+    font-weight: bolder;
+    padding: 5px;
+    border-radius: 10px;
+}
+.mssg{
+    margin: 50px 292px;
+    font-size: 30px;
+}
+
+@media (max-width:500px){
+    .mssg {
+    margin: 50px 5vw;
+    width: 100vw;
+}
+.item{
+    width: 98%;
+}
+.prod1{
+    gap: 22px;
+
+}
+}

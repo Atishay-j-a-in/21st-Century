@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+
+.logo{
+    position: relative;
+    left: 4%;
+    width: 77px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #00325e;
+    height: 50px;
+}
+
+.footer{
+   position: absolute;
+   display: flex;
+   justify-content: space-around;
+    bottom: 0;
+    height:50px;
+    width: 100%;
+    background-color: #00325e;
+
+}
+.prod{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    overflow: scroll;
+    z-index: 1;
+}
+.item{
+    width:85%;
+    height:100px;
+    margin:15px auto;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #00325e;
+    display:flex;
+    box-shadow:2px 2px 3px #00325e;
+}
+.img{
+    width: 150px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 7px;
+    margin: 4px 10px;
+
+    border:1px solid black;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+
+}
+.price{
+   font-size: 20px;
+   font-weight: bolder;
+   display: flex;
+    gap:10px;
+    align-items: center;
+}
+.del{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+.extra{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    bottom: 10px;
+}
+.rate{
+    position:relative;
+    left: 10px;
+    bottom: 10px;
+    margin:0 100px;
+    font-size: 20px;
+}
+.rate > span{
+    color:#01159b;
+    font-size: 30px;
+}
+.cart,.order{
+
+    background-color: white;
+    width:45px;
+    height: 45px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.order > img{
+    padding-left: 3px;
+}
+.name:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.fak{
+    opacity: .6;
+    font-size: 10px;
+    text-decoration:line-through;
+}
+@media (max-width:500px){
+    *{
+            font-size: 11px;
+    }
+    .info{
+     gap: 5px;
+    
+    }
+    .prod{
+        height: 84%;
+    }
+    .img{
+    width: 100px;
+    height: 100px;
+    object-fit: fill;
+    }
+    .item{
+        width: 100%;
+        margin: 10px auto;
+    height: 130px;
+    }
+    .name{
+        width:250px;
+    }
+    .price{
+        font-size: 10px;
+        gap:0;
+    }
+    .fak{
+        font-size: 6px;
+    }
+    .rate{
+        font-size: 9px;
+        margin: 0 35px;
+    }
+    .rate span{
+        font-size: 15px;
+    }
+    .del{
+    font-size: 7px;
+    width: 146px;
+    padding: 9px;
+    }
+}

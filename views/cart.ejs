@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21st Century</title>
+    <link rel="stylesheet" href="/home.css">
+    <link rel="stylesheet" href="/cart.css">
+</head>
+
+<body>
+    <div class="header">
+        <img class="logo" src="/img/image-2.png" alt="">
+        
+    </div>
+    <div class="prod">
+    
+         
+        <% if (cart.length==0) { %>
+            <div class="name mssg">Cart is empty 😒. Add your favourite items now.</div>
+      
+            <% } else { %>
+                
+                <div class="pay"><img width="50px" src="/img/pay.png" alt=""><div>Pay Now</div></div>
+                <% cart.forEach(element=> { %>
+                    <div class="item">
+                        <div class="prod1">
+                            <div><img src="/img/prod/<%=element.name%>.jpg" class="img" alt=""></div>
+                            <div class="infoall">
+                                <%=element.name %>- <%= element.elongated_name %>. <%= element.desc %>
+                            </div>
+
+
+                        </div>
+                        <div class="ord"><div>Total Ordered: <%= element.total %></div>
+                         <button class="rembtn"
+                                    data-product-id="<%=element.name %>">Remove</button></div>
+                    </div>
+                    
+                    <% }) %>
+                    <% }%>
+
+
+
+                  
+    </div>
+
+
+    <div class="footer">
+
+        <div class="amt">Your Bill :: $<%= amt %>
+        </div>
+        <div class="order"><img width="40px" src="/img/orders.png" alt=""></div>
+        <div class="cart"><img width="40px" src="/img/cart.png" alt=""></div>
+    </div>
+
+
+
+    <script src="/home.js"></script>
+    <script src="/cart.js"></script>
+</body>
+
+</html>

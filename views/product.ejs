@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21st Century</title>
+    <link rel="stylesheet" href="/home.css">
+    <link rel="stylesheet" href="/prod.css">
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="/img/image-2.png" alt="">
+       
+    </div>
+<div class="final">
+    <div class="start">
+        <div class="photo"><img width="400px" height="270px" src="/img/prod/<%=prod.name%>.jpg" alt=""></div>
+        <div class="content"><div class="nam"><b><%= prod.name %></b>- <%= prod.elongated_name %>. <%= prod.description %></div>
+   <div class="eco"><div class="pri">$<%= prod.price %><div class="fake">$<%= prod.price+Math.floor(Math.random()*10000) %></div></div>
+        <div class="rat">Rating: <span> <%=rate(prod.rating) %></span></div></div>
+        <div class="btn">
+               <button class="buy">Buy Now</button>
+        <button class="addcart" data-product-id="<%= prod.name %>">Add to Cart</button>
+        </div>
+     
+    </div>
+        
+    </div>
+
+    <div class="table">
+        <div>Specifications</div>
+       <table>
+           <tr>
+            <th>Dimensions (in inch)</th>
+            <td><%= prod.dimen%></td>
+           </tr>
+           <tr>
+            <th>Manufacturer</th>
+            <td><%=prod.manufacture%></td>
+           </tr>
+           <tr>
+            <th>Warranty</th>
+            <td><%= prod.warr %></td>
+           </tr>
+           <tr>
+            <th>Battery Required</th>
+            <td><%=prod.batreq %></td>
+           </tr>
+           <tr>
+            <th>Battery Included</th>
+            <td><%= prod.batinc %></td>
+           </tr>
+           <tr>
+            <th>Manufacturing Date</th>
+            <td><%= prod.date %></td>
+           </tr>
+           <tr>
+            <th>Weight</th>
+            <td><%= prod.weigh %></td>
+           </tr>
+       </table>
+    </div>
+
+    </div>
+
+
+
+    <div class="footer">
+        <div class="order"><img width="40px" src="/img/orders.png" alt=""></div>
+        <div class="cart"><img width="40px" src="/img/cart.png" alt=""></div>
+    </div>
+     <script src="/home.js"></script>
+     <script src="/prod.js"></script>
+</body>
+</html>

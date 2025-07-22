@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21st Century</title>
+    <link rel="stylesheet" href="/home.css">
+</head>
+
+<body>
+    <div class="header">
+        <img class="logo" src="/img/image-2.png" alt="">
+
+    </div>
+    <div class="prod">
+        <% item.forEach(element => { %>
+            <div class="item">
+            <div ><img src="/img/prod/<%=element.name%>.jpg" class="img" alt=""></div>
+         <div class="info">
+                <div class="name"><b><%=element.name %></b>-<%=element.elongated_name%>.<%=element.description %>
+            </div>
+            <div class="price">$ <%=element.price%> <div class="fak">$<%= element.price+Math.floor(Math.random()*10000) %></div></div>
+            
+            <div class="extra"><div class="del"><img src="/img/express.png" width="20px" alt="">  Get deilvered by tomorrow <%=Math.floor(Math.random()*24)%><b>:</b><%=Math.floor(Math.random()*60)  %></div>
+            <div class="rate">Ratings: <span> <%=rate(element.rating) %></span></div>
+        </div>
+        </div> </div>
+        <% }) %>
+      
+    </div>
+    <div class="footer">
+        <div class="order"><img width="40px" src="/img/orders.png" alt=""></div>
+        <div class="cart"><img width="40px" src="/img/cart.png" alt=""></div>
+    </div>
+    <script src="/home.js"></script>
+</body>
+
+</html>

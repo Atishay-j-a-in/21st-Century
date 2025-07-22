@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21st Century</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+      
+    <div class="container">
+        <img class="logo" src="/img/image.png" width="200px" alt="">
+        <div class="title">
+            <div class="head">
+                <div class="sign">Signup</div>
+                <div class="login">Login</div>
+            </div>
+            <div class="user">
+                
+                    <form action="/signup " method="post" id="signupform">
+                        <input type="text" name="username" placeholder="UserName" required>
+                        <input type="text" name="email" placeholder="Email" required>
+                        <div class="passwd">
+                            <input type="password" class="hide" name="pass" placeholder="Enter Password" required>
+                            <button type="button" onclick="togglepass()" class="toggle">👁️</button>
+                        </div>
+                        <input type="password" name="repass" placeholder="ReEnter Password" required>
+                        <button class="btnsign" type="submit">SignUp</button>
+                    </form>
+              
+                    <form id="loginform" action="/login" method="post">
+                        <input type="text" name="username1" placeholder="UserName" required>
+
+                        <div class="passwd">
+                            <input type="password" class="hide1" name="pass1" placeholder="Enter Password" required>
+                            <button onclick="togglepass1()" type="button" class="toggle1">👁️</button>
+                        </div>
+
+                        <button type="submit" class="btnlogin">Login</button>
+                    </form>
+             
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+    <script src="/logic.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(147, 207, 241);
+    
+}
+
+.container {
+    position: relative;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    top:50px;
+ 
+}
+
+.logo {
+    margin: auto;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 3.1em #03569e);
+}
+
+.head {
+    display: flex;
+    justify-content:space-around;
+}
+
+.sign,
+.login {
+
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 10px;
+    border-bottom: 2px solid #00325e;
+    cursor: pointer;
+    font-weight: bolder;
+    background-color: whitesmoke;
+}
+
+.sign{
+    border-right:  1px solid #00325e;
+}
+.login{
+    border-left: 1px solid #00325e;
+}
+.user{
+    display: flex;
+
+}
+.user> form{
+    margin: 20px;
+    display: flex;
+ 
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  
+   
+}
+.btnsign,.btnlogin{
+    width: 70px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #00325e;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.toggle,.toggle1{
+    width:30px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 10px;
+}
+@media (max-width:500px){
+  form input{
+    width:80px;
+  }
+  .user>form{
+    gap:5px;
+  }
+  .user{
+    width: 280px;
+  }
+}
