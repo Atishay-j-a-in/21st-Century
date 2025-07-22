@@ -1,7 +1,7 @@
 # 21st-Century
 
-An ecommerce that sells gadgets straight from far future. <br>
-it has a following:<br>
+A basic ecommerce store that sells gadgets straight from future. <br>
+it has following features:<br>
 User registration <br>
 Cart <br>
 product details page<br>
